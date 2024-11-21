@@ -19,6 +19,8 @@ pm2 logs
 There are many configurations that you can adjust, but in most cases, the defaults will suffice. Below is a list of flags you can pass to the `run-miner` command in the `Makefile` to adjust the miner's behavior.  
 :::
 
+- `--twitter.max_tweets_per_request` - the maximum number of tweets to scrape per request. Note that Twitter's current rate limit is 900 requests per 15 minutes. Defaults to 100.
+
 - `--blacklist.min_stake_required` - the minimum amount of TAO a validator must have staked for your miner to respond
 
 - `--blacklist.force_validator_permit` - requires a validator to have a vpermit for your miner to respond
